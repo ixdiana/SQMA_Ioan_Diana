@@ -3,6 +3,16 @@ import java.util.List;
 
 public class Operatii {
 	
+	public void inmultire(int[] array, int factor) {
+        	if(!(array.length > 0)) {
+            		throw new IllegalArgumentException("vector null");
+        	}
+        
+        	for( int i=0; i<array.length; i++ ) {
+            		array[i] = array[i] * factor;
+        	}
+    	}
+	
 	public int suma(int param1, int param2) {
 		return param1 + param2;
 	}
